@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
-  get '/sessions/destroy', to: 'sessions#destroy'
+  post '/sessions/destroy', to: 'sessions#destroy'
 end
