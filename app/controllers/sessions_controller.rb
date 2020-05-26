@@ -1,10 +1,10 @@
 class SessionsController < ApplicationController
- #before_action :require_login
+   #before_action :require_login
  
- def new 
- end
+   def new 
+   end
  
- def create 
+  def create 
     #binding.pry
     name = params[:name]
     if !name || name.empty?
@@ -13,7 +13,9 @@ class SessionsController < ApplicationController
       session[:name] = params[:name]
       redirect_to '/'
     end
- end
+  end
  
- 
+  def destroy
+    session.delete :name
+  end
 end
