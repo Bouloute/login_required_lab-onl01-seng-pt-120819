@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
     def require_login
       binding.pry
      # return head(:forbidden) unless session.include? :user_id
-     redirect_to
+     redirect_to controller: 'sessions', action: 'new' unless session.include? :name
     end
 end
