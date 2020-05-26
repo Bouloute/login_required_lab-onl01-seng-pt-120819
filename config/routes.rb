@@ -4,4 +4,6 @@ Rails.application.routes.draw do
  # resources :secrets, only: [:show]
  
   get '/secret', to: 'secrets#show'
+  
+  get '/session', to: 'secrets#show'
 end
