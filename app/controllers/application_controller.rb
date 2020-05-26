@@ -9,7 +9,8 @@ class ApplicationController < ActionController::Base
   
   private
   
-    def require_logged_in
-      redirect_to controller: 'sessions', action: 'new' unless current_user
+    def require_login
+      binding.pry
+      return head(:forbidden) unless session.include? :user_id
     end
 end
