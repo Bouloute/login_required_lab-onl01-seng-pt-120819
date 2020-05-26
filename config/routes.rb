@@ -5,7 +5,7 @@ Rails.application.routes.draw do
  
   get '/secret', to: 'secrets#show'
   
-  get '/sessions/new', to: 'sessions#new'
-  get '/sessions', to: 'sessions#create'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
   get '/sessions/destroy', to: 'sessions#destroy'
 end
