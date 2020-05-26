@@ -5,5 +5,5 @@ Rails.application.routes.draw do
  
   get '/secret', to: 'secrets#show'
   
-  get '/session', to: 'secrets#show'
+  get '/session/new', to: 'secrets#show'
 end
