@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   
   get '/sessions/new', to: 'sessions#new'
   get '/sessions', to: 'sessions#create'
+  get '/sessions/destroy', to: 'sessions#destroy'
 end
