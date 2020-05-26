@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   
  # resources :secrets, only: [:show]
  
-  get '/secrets', to: 'secrets#show'
+  get '/secret', to: 'secrets#show'
 end
